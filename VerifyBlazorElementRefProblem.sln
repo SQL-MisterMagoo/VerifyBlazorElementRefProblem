@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32728.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifyBlazorElementRefProblem", "VerifyBlazorElementRefProblem\VerifyBlazorElementRefProblem.csproj", "{C00151D8-0964-4D86-BA19-ADE8563DA5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifyBlazorElementRefProblem.Tests", "VerifyBlazorElementRefProblem.Tests\VerifyBlazorElementRefProblem.Tests.csproj", "{9736AE4E-2827-4BC7-A01F-585415F57FA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C00151D8-0964-4D86-BA19-ADE8563DA5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00151D8-0964-4D86-BA19-ADE8563DA5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00151D8-0964-4D86-BA19-ADE8563DA5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00151D8-0964-4D86-BA19-ADE8563DA5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9736AE4E-2827-4BC7-A01F-585415F57FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9736AE4E-2827-4BC7-A01F-585415F57FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9736AE4E-2827-4BC7-A01F-585415F57FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9736AE4E-2827-4BC7-A01F-585415F57FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F944487-188B-4CE8-BB41-33776ABB409D}
+	EndGlobalSection
+EndGlobal
