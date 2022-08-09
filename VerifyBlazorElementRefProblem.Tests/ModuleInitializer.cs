@@ -12,6 +12,7 @@ public static class ModuleInitializer
 	{
 		// remove some noise from the html snapshot
 		VerifierSettings.ScrubEmptyLines();
+		VerifierSettings.ScrubInlineGuids();
 		BlazorScrubber.ScrubCommentLines();
 		VerifierSettings.ScrubLinesWithReplace(s =>
 		{
@@ -24,28 +25,9 @@ public static class ModuleInitializer
 			return scrubbed;
 		});
 		
-		//HtmlPrettyPrint.All();
-		// Hacky hack to remove blazor:elementreference guids
-		HtmlPrettyPrint.All(nodeList => BlazorElementReferenceScrubber(nodeList));
+		HtmlPrettyPrint.All();
 		
 		VerifierSettings.ScrubLinesContaining("<script src=\"_framework/dotnet.");
 		VerifyBunit.Initialize();
-	}
-	private static void BlazorElementReferenceScrubber(INodeList nodes)
-	{
-		foreach (var node in nodes)
-		{
-			if (node.HasChildNodes)
-			{
-				var childNodes = node.ChildNodes;
-				BlazorElementReferenceScrubber(childNodes);
-			}
-
-			if (node.TryGetAttr("blazor:elementreference", out var attribute))
-			{
-				attribute.Value = "elementref_1";
-			}
-		}
-
 	}
 }
